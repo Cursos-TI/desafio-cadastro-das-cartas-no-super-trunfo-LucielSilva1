@@ -78,6 +78,20 @@ int main() {
    scanf("%d",&tur2);
    
    
+  //Nesta parte, serão adicionados cálculo sobre densidade populacional
+   //e PIB per capita
+   float pibCid1, pibCid2;
+   float densidadeCid1, densidadeCid2;
+   
+   densidadeCid1 = pop1 / area1;
+   densidadeCid2 = pop2 / area2;
+   
+   pibCid1 = pib1 / pop1;
+   pibCid2 = pib2 /pop2;
+   
+   
+   //------------------------------------------------------------------
+   
     //exibir informações cadastradas
    printf("------DADOS DE CARTAS DIGITADAS-------\n");
    printf("Primeira carta:\n");
@@ -88,8 +102,11 @@ int main() {
    printf("\nPopulação: %d",pop1);
    printf("\nÁrea: %.2f",area1);
    printf("\nPIB: %.2f",pib1);
-   printf("\nNúmero de pontos turísticos: %d",tur1);
+   printf("\nNúmero de pontos turísticos: %d\n",tur1);
+   printf("\nDENSIDADE POPULACIONAL:.......%.2f",densidadeCid1);
+   printf("\nPIB PER CAPITA:.......%.2f",pibCid1);
    
+   printf("\n.......................................\n");
    
    printf("\n\nSegunda carta:\n");
    printf("Carta: 2\n");
@@ -100,7 +117,10 @@ int main() {
    printf("\nÁrea: %.2f",area2);
    printf("\nPIB: %.2f",pib2);
    printf("\nNúmero de pontos turísticos: %d",tur2);
+   printf("\nDENSIDADE POPULACIONAL:.......%.2f",densidadeCid2);
+   printf("\nPIB PER CAPITA:.......%.2f",pibCid2);
 
+   printf("\n.......................................\n");
 
     return 0;
 }
